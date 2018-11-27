@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2461ba66bfdf48cf95bf925d39a213ef" Name="Diagram1">
+        <EntityTypeShape EntityType="TheGoodDatabaseModel.AppointmentTable" Width="1.5" PointX="7.5" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheGoodDatabaseModel.DoctorTable" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheGoodDatabaseModel.HospitalTable" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheGoodDatabaseModel.PatientTable" Width="1.5" PointX="5.25" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheGoodDatabaseModel.PrescriptionTable" Width="1.5" PointX="9.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheGoodDatabaseModel.TestTable" Width="1.5" PointX="12.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="TheGoodDatabaseModel.FK_AppointmentID" ManuallyRouted="false" />
+        <AssociationConnector Association="TheGoodDatabaseModel.FK_AppointmentID2" ManuallyRouted="false" />
+        <AssociationConnector Association="TheGoodDatabaseModel.FK_DoctorId2" ManuallyRouted="false" />
+        <AssociationConnector Association="TheGoodDatabaseModel.FK_PatientId" ManuallyRouted="false" />
+        <AssociationConnector Association="TheGoodDatabaseModel.FK_DoctorId" ManuallyRouted="false" />
+        <AssociationConnector Association="TheGoodDatabaseModel.FK_DoctorId3" ManuallyRouted="false" />
+        <AssociationConnector Association="TheGoodDatabaseModel.FK_DoctorId4" ManuallyRouted="false" />
+        <AssociationConnector Association="TheGoodDatabaseModel.FK_HospitalId" ManuallyRouted="false" />
+        <AssociationConnector Association="TheGoodDatabaseModel.FK_PatientID2" ManuallyRouted="false" />
+        <AssociationConnector Association="TheGoodDatabaseModel.FK_PatientID3" ManuallyRouted="false" />
+        <AssociationConnector Association="TheGoodDatabaseModel.FK_TestID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
