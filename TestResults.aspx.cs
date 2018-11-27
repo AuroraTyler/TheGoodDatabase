@@ -9,6 +9,23 @@ public partial class TestResults : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        //    if (!IsPostBack)
+        //    {
+        //        Refresh();
+        //    }
 
     }
+
+    //void Refresh()
+    //{
+    //    if (dbcon != null)
+    //        dbcon.Dispose();
+    //    dbcon = new ();
+    //    dbcon.EmailTables.Where(item => item.RecipientUserName.Trim().Equals(User.Identity.Name.Trim())).Load();
+
+    //    //add data to the GridView
+    //    GridView1.DataSource = dbcon.EmailTables.Local;
+    //    GridView1.DataBind();
+    //}
+    //HOSEntities dbcon;
 }
