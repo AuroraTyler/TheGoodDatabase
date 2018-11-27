@@ -9,23 +9,23 @@ public partial class Prescriptions : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        //    if (!IsPostBack)
-        //    {
-        //        Refresh();
-        //    }
+        if (!IsPostBack)
+        {
+            Refresh();
+        }
 
     }
 
-    //void Refresh()
-    //{
-    //    if (dbcon != null)
-    //        dbcon.Dispose();
-    //    dbcon = new PrescriptionDataSource();
-    //    dbcon.EmailTables.Where(item => item.RecipientUserName.Trim().Equals(User.Identity.Name.Trim())).Load();
+    void Refresh()
+    {
+        if (dbcon != null)
+            dbcon.Dispose();
+        dbcon = new TheGoodDatabaseEntities();
+        //dbcon.PrescriptionTables.Where(item => item.RecipientUserName.Trim().Equals(User.Identity.Name.Trim())).Load();
 
-    //    //add data to the GridView
-    //    GridView1.DataSource = dbcon.EmailTables.Local;
-    //    GridView1.DataBind();
-    //}
-    //HOSEntities dbcon;
+        //add data to the GridView
+        GridView1.DataSource = dbcon.PrescriptionTables.Local;
+        GridView1.DataBind();
+    }
+    TheGoodDatabaseEntities dbcon;
 }
